@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# min and map files
+*.min.*
+*.map
