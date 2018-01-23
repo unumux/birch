@@ -5,3 +5,7 @@
     @import 'components/components';
 }
 
+// Set by default. Remove property to display Footer-nav heading
+.sr-only {
+    display: none;
+}

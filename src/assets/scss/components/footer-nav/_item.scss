@@ -1,0 +1,17 @@
+&__item {
+    list-style-type: none;
+    padding: 0;  
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    flex-basis: auto;
+    text-align: center; 
+    text-decoration: underline;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+}
