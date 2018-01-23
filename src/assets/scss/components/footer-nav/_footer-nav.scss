@@ -1,23 +1,7 @@
 &-footer-nav {
-    background-color: #015294;
-    color: #fff;
     margin: 0 auto;
     padding: 0;
-    text-align: center;
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 0;
     width: 100%;
-    
-    :last-child {
-        border-right: none;
-    }
-
-    @media all and (min-width: 992px) {
-        margin: 0;
-        text-align: initial;
-        width: initial;
-    }
 
     @import 'heading';
     @import 'item';
