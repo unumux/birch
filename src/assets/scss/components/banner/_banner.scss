@@ -1,5 +1,7 @@
 &-banner {
-    
+    background-color: blue!important;
+
+    @import 'container';
     @import 'content';
     @import 'heading';
 }
