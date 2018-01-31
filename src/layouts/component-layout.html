@@ -18,19 +18,15 @@
         <td class="center" align="center" valign="top">
           <center>
             {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
-                <container>
-                    <row>
-                        <columns>
-                            <h1>{{subject}}</h1>
-                            <p>{{description}}</p>
-                        </columns>
-                    </row>
-                    <row>
-                        <columns>
-                            {{> body}}
-                        </columns>
-                    </row>
-                </container>
+            <container>
+              <row>
+                <columns>
+                  <h1>{{subject}}</h1>
+                  <p>{{description}}</p>
+                </columns>
+              </row> 
+              {{> body}}
+            </container>
           </center>
         </td>
       </tr>
