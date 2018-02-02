@@ -1,0 +1,24 @@
+<row>
+    <p>Example 1: Header with logo</p>
+    <columns>
+        {{> header-logo}}
+    </columns>
+    <row>
+        <p>Example 2: Header with logo & sub brand</p>
+        <columns>
+            {{> header-logo}}
+        </columns>
+        <columns valign="bottom" large="8">
+            {{> sub-brand}}
+        </columns>
+    </row>
+    <row>
+        <p>Example 3: Header with logo & call to action</p>
+        <columns valign="">
+            {{> header-logo}}
+        </columns>
+        <columns valign="bottom">
+            <p class="text-right"><a href="#" alt="Description here">Link to something ></a></p>
+        </columns>
+    </row>
+</row>
