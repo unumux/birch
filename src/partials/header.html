@@ -5,17 +5,20 @@
     </columns>
     <row>
         <p>Example 2: Header with logo & sub brand</p>
-        <columns>
+        <columns small="4">
             {{> header-logo}}
         </columns>
-        <columns valign="bottom" large="8">
+        <columns valign="bottom" small="8" large="10">
             {{> sub-brand}}
         </columns>
     </row>
     <row>
         <p>Example 3: Header with logo & call to action</p>
-        <columns valign="">
+        <columns small="4">
             {{> header-logo}}
+        </columns>
+        <columns valign="bottom" small="8" large="4">
+            {{> sub-brand}}
         </columns>
         <columns valign="bottom">
             <p class="text-right"><a href="#" alt="Description here">Link to something ></a></p>
