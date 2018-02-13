@@ -1,9 +1,12 @@
 <row style="background-color: {{ 'bgColor' }}; color: {{ 'color' }}">
     <columns large="6" valign="middle" style="background-color: {{ 'bgColorL' }}; color: {{ 'colorL' }}">
+        <spacer size="16"></spacer>
         {{> (lookup . 'l') }}
+        <spacer size="16"></spacer>
     </columns>
     <columns large="6" valign="middle" style="background-color: {{ 'bgColorR' }}; color: {{ 'colorR' }}">
         <spacer size="16"></spacer>
         {{> (lookup . 'r') }}
+        <spacer size="16"></spacer>
     </columns>
 </row>
