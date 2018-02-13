@@ -1,12 +1,12 @@
-<wrapper>
-    <container>
-        <row class="collapse">
-            <columns small="12" large="6">
-                {{> (lookup . 'boxy1') }}
-            </columns>
-            <columns small="12" large="6">
-                {{> (lookup . 'boxy2') }}
-            </columns>
-        </row>
+    <container style="background-color: {{ 'lbc' }};">
+        <table>
+            <tr>
+                <td style="color: {{ 'lc' }}; width:50%;" valign="middle">
+                    {{> (lookup . 'l') }}
+                </td>
+                <td style="background-color: {{ 'rbc' }}; color: {{ 'rc' }} !important; width:50%" valign="middle">
+                    {{> (lookup . 'r') }}
+                </td>
+            </tr>
+        </table>
     </container>
-</wrapper>
