@@ -11,9 +11,21 @@
 
 
 .birch-banner .container {
-    background-color: blue;
+    background-color: #eee;
 }
 
 .birch-contact-card .container {
     background-color: yellow;
+}
+
+td.columns, td.column, th.columns, th.column {
+    padding-bottom: 0px !important;
+}
+
+.yellow {
+    background-color: yellow!important;
+}
+
+.vertical-align {
+    vertical-align: middle;
 }
