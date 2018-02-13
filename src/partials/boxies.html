@@ -1,12 +1,13 @@
-    <container style="background-color: {{ 'lbc' }};">
-        <table>
-            <tr>
-                <td style="color: {{ 'lc' }}; width:50%;" valign="middle">
-                    {{> (lookup . 'l') }}
-                </td>
-                <td style="background-color: {{ 'rbc' }}; color: {{ 'rc' }} !important; width:50%" valign="middle">
-                    {{> (lookup . 'r') }}
-                </td>
-            </tr>
-        </table>
-    </container>
+<container style="background-color: {{ 'lbc' }};">
+    <spacer size="16"></spacer>
+    <row>
+        <columns large="6">
+            {{> (lookup . 'l') }}
+        </columns>
+        <spacer size="16"></spacer>
+        <columns large="6">
+            <spacer size="16"></spacer>
+            {{> (lookup . 'r') }}
+        </columns>
+    </row>
+</container>
