@@ -1,12 +1,8 @@
-    <container style="background-color: {{ 'lbc' }};">
-        <table>
-            <tr>
-                <td style="color: {{ 'lc' }}; width:50%;" valign="middle">
-                    {{> (lookup . 'l') }}
-                </td>
-                <td style="background-color: {{ 'rbc' }}; color: {{ 'rc' }} !important; width:50%" valign="middle">
-                    {{> (lookup . 'r') }}
-                </td>
-            </tr>
-        </table>
-    </container>
+<row style="background-color: {{ 'bgColor' }}; color: {{ 'color' }}">
+    <columns large="6" valign="middle" style="background-color: {{ 'bgColorL' }}; color: {{ 'colorL' }}">
+        {{> (lookup . 'l') }}
+    </columns>
+    <columns large="6" valign="middle" style="background-color: {{ 'bgColorR' }}; color: {{ 'colorR' }}">
+        {{> (lookup . 'r') }}
+    </columns>
+</row>
