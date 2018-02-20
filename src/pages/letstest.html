@@ -3,11 +3,48 @@ layout: legit-layout
 subject: Not sure
 description: What goes here
 ---
-{{> header}}
+
+{{> 
+    header 
+    brand='Dental' 
+    logoUrl='http://unum.com' 
+    logoImage='../assets/img/unum-two-color-logo.svg' 
+    clickerText='Sign in' 
+    clickerUrl='http://google.com'
+}}
+
+
 {{> banner}}
-{{#> test }}
-  Failover content
-{{/test}}
-{{> boxies file=../../dist/components/boxies.html}}
-{{> banner}}
+
+
+{{> 
+    boxies 
+    l='inline-images' 
+    r='text-block2' 
+    bgColor='#fff' 
+    color='#1D567D'
+}}
+
+{{> 
+    boxies 
+    l='text-block2' 
+    r='inline-images' 
+    bgColor='#fff' 
+    color='#1D567D'
+}}
+
+{{> 
+    boxies 
+    l='inline-images' 
+    r='text-block2' 
+    bgColor='#fff' 
+    color='#1D567D'
+}}
+
+
+{{> 
+    banner
+    optionalButton='button';
+}}
+
 {{> footer}}
