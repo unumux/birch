@@ -5,7 +5,7 @@
     @import 'components/components';
 }
 
-.p {
+.zeroPadding {
     padding: 0px !important;
 }
 
@@ -18,10 +18,15 @@
     background-color: yellow;
 }
 
-td.columns, td.column, th.columns, th.column {
-    padding-bottom: 0px !important;
-}
+// td.columns, td.column, th.columns, th.column {
+//     padding-bottom: 0px !important;
+// }
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
     color: inherit;
+}
+
+table.button {
+    margin: 0;
+    Margin: 0;
 }

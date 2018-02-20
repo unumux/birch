@@ -4,8 +4,10 @@ subject: Not sure
 description: What goes here
 ---
 {{> header}}
-{{> hero-image}}
 {{> banner}}
-{{> heading-block}}
+{{#> test }}
+  Failover content
+{{/test}}
+{{> boxies file=../../dist/components/boxies.html}}
 {{> banner}}
 {{> footer}}
