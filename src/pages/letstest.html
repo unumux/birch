@@ -14,7 +14,10 @@ description: What goes here
 }}
 
 
-{{> banner}}
+{{> 
+    banner
+    borderColor='5px solid #DDB88A'
+}}
 
 
 {{> 
@@ -42,9 +45,21 @@ description: What goes here
 }}
 
 
-{{> 
-    banner
-    optionalButton='button';
-}}
+{{> banner}}
 
-{{> footer}}
+{{#*inline "styling-context"}}
+    text text text
+{{/inline}}
+{{#each children}}
+  {{> inline-images}}
+{{/each}}
+
+{{> styling-context}}
+
+{{> 
+    footer
+    bgColor='#015294'
+    borderColor='5px solid #DDB88A'
+    color='$white'
+
+}}

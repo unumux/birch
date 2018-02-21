@@ -35,3 +35,15 @@ table.button {
         color: $header-link-color;
     }
 }
+
+.border {
+    border-bottom: 5px solid BurlyWood;
+
+    :last-child {
+        border-bottom: none;
+    }
+}
+
+.footerBorder {
+    border-top: 5px solid BurlyWood;
+}
