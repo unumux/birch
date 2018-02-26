@@ -1,8 +1,13 @@
-<row style="background-color: {{ 'bgColor' }}; color: {{ 'color' }}">
-    <columns large="6" valign="middle" style="padding: 32px 16px 32px 32px;">
-        {{> (lookup . 'l') }}
+
+<row>
+    <columns>
+        {{#> left-column}}
+            placeholder text
+        {{/left-column}}
     </columns>
-    <columns large="6" valign="middle" style="padding: 32px 32px 32px 16px;">
-        {{> (lookup . 'r') }}
+    <columns>
+        {{#> right-column}}
+            placeholder text again
+        {{/right-column}}
     </columns>
 </row>
