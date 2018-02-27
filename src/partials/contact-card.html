@@ -1,28 +1,28 @@
-<row class="collapse" style="background-color: yellow;">
-    <columns large="3">
-        <img src="https://dummyimage.com/150x175/000/fff.png">
+<row class="collapse noBottom" style="background-color: yellow;">
+    <columns class="noBottom" large="3">
+        <img src="{{imageUrl}}" alt="{{altText}}">
     </columns>
-    <columns>
+    <columns class="noBottom">
         <spacer size="16"></spacer>
         <row>
-            <p>Contact Name</p>
-            <p>Contact Title</p>
+            <p>{{name}}</p>
+            <p>{{title}}</p>
         </row>
         <spacer size="16"></spacer>
+        <row>
+            <columns class="noBottom" large="1">
+                <img src="{{imageUrl2}}" alt="{{altText2}}">
+            </columns>
+            <columns class="noBottom">
+                <p>Email address: {{email}}</p>
+            </columns>
+        </row>
         <row>
             <columns large="1">
-                <img src="https://dummyimage.com/25x25/000/fff.png">
+                <img src="{{imageUrl3}}" alt={{altText3}}>
             </columns>
             <columns>
-                <p>Email address: blah@email.com</p>
-            </columns>
-        </row>
-        <row>
-            <columns columns large="1">
-                <img src="https://dummyimage.com/25x25/000/fff.png">
-            </columns>
-            <columns>
-                <p>Phone Number: 999-9999</p>
+                <p>Phone Number: {{number}}</p>
             </columns>
         </row>
     </columns>

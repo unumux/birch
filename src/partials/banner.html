@@ -1,14 +1,12 @@
 <row style="border-bottom: {{borderColor}}">
     <columns class="birch-banner__content">
-        <h1 class="birch-banner__heading text-center">Heading Text</h1>
-        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis soluta error ad dolorem, culpa illum ex architecto tempora omnis laudantium hic facilis iure velit quia corrupti.</p>
-        <center>
-            <menu class="birch-banner__actions">
-                <item class="birch-banner__action">
-                        <button href="#" class="button radius">Button Text</button>
-                </item>
-            </menu>
-        </center>
+        {{#> top}}
+            Heading text
+        {{/top}}
+        {{#> middle}}
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis soluta error ad dolorem, culpa illum ex architecto tempora omnis laudantium hic facilis iure velit quia corrupti.
+        {{/middle}}
+        {{#> bottom}}
+        {{/bottom}}
     </columns>
 </row>
-

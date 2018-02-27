@@ -27,14 +27,14 @@ table.button {
     Margin: 0;
 }
 
-.header {
-    background-color: $primary-color;
-    color: $header-font-color;
+// .header {
+//     background-color: $primary-color;
+//     color: $header-font-color;
 
-    a {
-        color: $header-link-color;
-    }
-}
+//     a {
+//         color: $header-link-color;
+//     }
+// }
 
 .border {
     border-bottom: 5px solid BurlyWood;
@@ -46,4 +46,20 @@ table.button {
 
 .footerBorder {
     border-top: 5px solid BurlyWood;
+}
+
+th.menu-item a {
+    color: #fff !important;
+}
+
+.underline {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.noBottom {
+    padding-bottom: 0px!important;
 }

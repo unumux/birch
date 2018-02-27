@@ -5,39 +5,98 @@ description: What goes here
 ---
 
 {{> 
-    header 
-    brand='Dental' 
+    header
+    bgColor='#015294' 
+    brand='Dental'
+    color='#fff' 
     logoUrl='http://unum.com' 
     logoImage='../assets/img/unum-two-color-logo.svg' 
+    clickerColor='#fff'
     clickerText='Sign in' 
     clickerUrl='http://google.com'
 }}
 
 
+{{#> banner borderColor='5px solid #DDB88A'}}
+
+    {{#*inline "top"}}
+        {{> styling-context heading='I am a heading'}}
+    {{/inline}}
+
+    {{#*inline "middle"}}
+        {{> styling-context paragraph='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis soluta error ad dolorem, culpa illum ex architecto tempora omnis laudantium hic facilis iure velit quia corrupti.'}}
+    {{/inline}}
+
+    {{#*inline "bottom"}}
+        {{> button buttonText='hallo moto'}}
+    {{/inline}}
+
+{{/banner}}
+
 {{> 
-    banner
-    borderColor='5px solid #DDB88A'
+    contact-card
+    name='Sally Joe'
+    title='Head Developer of everything'
+    imageUrl='https://dummyimage.com/150x175/000/fff.png'
+    altText='fake fake fake'
+    imageUrl2='https://dummyimage.com/25x25/000/fff.png'
+    altText2='still fake here'
+    imageUrl3='https://dummyimage.com/25x25/000/fff.png'
+    altText3='yep im fake too'
+    email='sally@iamthegreatest.com'
+
+    number='999-111-2244'
+
 }}
 
+{{> 
+    hero-image
+    borderColor='5px solid #DDB88A'
+    imageUrl='https://dummyimage.com/600x400/000/fff.png'
+    altText="fake image yall"
+}}
 
-{{> banner}}
+{{#> banner}}
+
+    {{#*inline "top"}}
+        {{> styling-context heading='I am a heading'}}
+    {{/inline}}
+
+    {{#*inline "middle"}}
+        {{> styling-context paragraph='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis soluta error ad dolorem, culpa illum ex architecto tempora omnis laudantium hic facilis iure velit quia corrupti.'}}
+    {{/inline}}
+
+     {{#*inline "bottom"}}
+     {{/inline}}
+
+
+{{/banner}}
 
 {{#> boxies}}
 
-        {{#*inline "left-column"}}
-            {{> inline-images}}
-        {{/inline}}
+    {{#*inline "left-column"}}
+        {{> inline-images}}
+    {{/inline}}
 
-        {{#*inline "right-column"}}
-            {{> small-expanded-button}}
-        {{/inline}}
+    {{#*inline "right-column"}}
+        {{> small-expanded-button}}
+    {{/inline}}
 
 {{/boxies}}
 
-{{> 
-    footer
-    bgColor='#015294'
-    borderColor='5px solid #DDB88A'
-    color='#fff'
+{{> button color='secondary' buttonText='i am button'}}
 
-}}
+{{#> footer bgColor='#015294' borderColor='5px solid #DDB88A' color='#fff'}}
+
+    {{#*inline "test"}}
+        {{> footer-nav
+            menu1='Email Us' 
+            menu2='Login' 
+            menu3='Call Us: 1.800.275.8686'
+        }}
+        {{> product-nav}}
+        {{> copyright}}
+
+    {{/inline}}
+
+{{/footer}}
