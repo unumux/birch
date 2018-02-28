@@ -1,9 +1,9 @@
 <!-- contact card starts -->
-<row class="collapse noBottom" style="background-color: yellow;">
-    <columns class="noBottom" large="3">
+<row class="collapse {{class}}">
+    <columns class="{{class}}" large="3">
         <img src="{{imageUrl}}" alt="{{altText}}">
     </columns>
-    <columns class="noBottom">
+    <columns class="{{second-class}}">
         <spacer size="16"></spacer>
         <row>
             <p>{{name}}</p>
@@ -11,10 +11,10 @@
         </row>
         <spacer size="16"></spacer>
         <row>
-            <columns class="noBottom" large="1">
+            <columns class="{{second-class}}" large="1">
                 <img src="{{imageUrl2}}" alt="{{altText2}}">
             </columns>
-            <columns class="noBottom">
+            <columns class="{{second-class}}">
                 <p>Email address: {{email}}</p>
             </columns>
         </row>

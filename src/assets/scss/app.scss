@@ -3,10 +3,6 @@
 @import 'unum/unum-components';
 @import 'foundation-emails';
 
-.birch {
-    @import 'components/components';
-}
-
 .zeroPadding {
     padding: 0px !important;
 }
@@ -55,8 +51,4 @@ th.menu-item a {
 
 .noBottom {
     padding-bottom: 0px!important;
-}
-
-.KYLE {
-    background-color: $secondary-color;
 }

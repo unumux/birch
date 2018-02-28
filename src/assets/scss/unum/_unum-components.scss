@@ -18,3 +18,49 @@
         color: $primary-footer-link-color;
     }
 }
+
+.primary-banner {
+    background-color: $primary-banner-background-color !important;
+    border-bottom: 5px solid $primary-banner-border-color !important;
+    color: $primary-banner-color;
+}
+
+.primary-banner__content {
+    padding-top: 16px;
+}
+
+.secondary-banner {
+    background-color: $secondary-banner-background-color;
+    border-bottom: 5px solid $secondary-banner-border-color;
+    color: $secondary-banner-color;
+}
+
+.secondary-banner__content {
+    padding-top: 16px;
+}
+
+.primary-button {
+    background-color: $primary-button-background-color;
+    color: $primary-button-color;
+}
+
+.secondary-button, .secondary-button a  {
+    background-color: $secondary-button-background-color !important;
+    color: $secondary-button-color !important;
+}
+
+.contact-card {
+    background-color: $contact-card-background-color;
+    color: $contact-card-color;
+    padding-bottom: 0px!important;
+}
+
+.contact-card__column {
+    padding-bottom: 0px!important;
+}
+
+.divider {
+    margin-right: 5px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
