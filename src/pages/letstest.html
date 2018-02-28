@@ -6,14 +6,13 @@ description: What goes here
 
 {{> 
     header
-    bgColor='purple' 
     brand='PLACE TEXT HERE'
-    color='#fff' 
     logoUrl='http://unum.com' 
     logoImage='../assets/img/unum-two-color-logo.svg' 
     clickerColor='#fff'
     clickerText='Sign in' 
     clickerUrl='http://google.com'
+    class="primary-header"
 }}
 
 
@@ -44,7 +43,6 @@ description: What goes here
     imageUrl3='https://dummyimage.com/25x25/000/fff.png'
     altText3='yep im fake too'
     email='sally@iamthegreatest.com'
-
     number='999-111-2244'
 
 }}
@@ -86,7 +84,7 @@ description: What goes here
 
 {{> button color='secondary' buttonText='i am button'}}
 
-{{#> footer bgColor='#015294' borderColor='5px solid #DDB88A' color='#fff'}}
+{{#> footer class="primary-footer"}}
 
     {{#*inline "test"}}
         {{> footer-nav

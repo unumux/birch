@@ -1,4 +1,6 @@
-@import 'settings';
+// @import 'settings';
+@import 'unum/unum-theme';
+@import 'unum/unum-components';
 @import 'foundation-emails';
 
 .birch {
@@ -27,15 +29,6 @@ table.button {
     Margin: 0;
 }
 
-// .header {
-//     background-color: $primary-color;
-//     color: $header-font-color;
-
-//     a {
-//         color: $header-link-color;
-//     }
-// }
-
 .border {
     border-bottom: 5px solid BurlyWood;
 
@@ -62,4 +55,8 @@ th.menu-item a {
 
 .noBottom {
     padding-bottom: 0px!important;
+}
+
+.KYLE {
+    background-color: $secondary-color;
 }

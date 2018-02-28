@@ -1,0 +1,20 @@
+@import 'cl-theme';
+
+.primary-header {
+    background-color: $primary-header-bg-color;
+    color: $primary-header-text-color;
+    
+    a {
+        color: $primary-header-link-color;
+    }
+}
+
+.primary-footer {
+    background-color: $primary-header-bg-color;
+    border: 5px solid $primary-header-border-color;
+    color: $primary-header-text-color;
+    
+    a {
+        color: $primary-header-link-color;
+    }
+}
