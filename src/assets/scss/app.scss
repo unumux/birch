@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'unum_settings';
 @import 'foundation-emails';
 
 .birch {
@@ -62,4 +62,13 @@ th.menu-item a {
 
 .noBottom {
     padding-bottom: 0px!important;
+}
+
+.primary-header {
+    background-color: $primary-header-bg-color;
+    color: $primary-header-text-color;
+
+    a {
+        color: $primary-header-link-color;
+    }
 }
