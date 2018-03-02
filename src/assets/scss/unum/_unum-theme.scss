@@ -86,8 +86,8 @@ $hr-width: $global-width;
 $hr-border: 1px solid $black;
 $hr-margin: 20px auto;
 $anchor-text-decoration: none;
-$anchor-color: $primary-color;
-$anchor-color-visited: $anchor-color;
+$anchor-color: $white!important;
+$anchor-color-visited: $anchor-color !important;
 $anchor-color-hover: darken($primary-color, 10%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
@@ -115,7 +115,7 @@ $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 
 $primary-button-background-color: $primary-color;
-$primary-button-color: $white;
+$primary-button-color: $white !important;
 $secondary-button-background-color: $secondary-color;
 $secondary-button-color: $primary-color;
 $ghost-button-background-color: $white;
@@ -193,3 +193,6 @@ $secondary-banner-border-color: #CCBD8F !important;
 $contact-card-background-color: $white;
 $contact-card-color: #1377B9;
 
+// 13. Hero Image
+// ---------------
+$hero-image-border-color: #CCBD8F;

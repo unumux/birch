@@ -9,6 +9,7 @@ description: What goes here
     brand='PLACE TEXT HERE'
     logoUrl='http://unum.com' 
     logoImage='../assets/img/unum-two-color-logo.svg' 
+    logoImageAlt='unum logo'
     clickerColor='#fff'
     clickerText='Sign in' 
     clickerUrl='http://google.com'
@@ -36,7 +37,7 @@ description: What goes here
     contact-card
     name='Sally Joe'
     title='Head Developer of everything'
-    imageUrl='https://dummyimage.com/150x175/000/fff.png'
+    imageUrl='https://dummyimage.com/150x150/000/fff.png'
     altText='fake fake fake'
     imageUrl2='https://dummyimage.com/25x25/000/fff.png'
     altText2='still fake here'
@@ -51,12 +52,12 @@ description: What goes here
 
 {{> 
     hero-image
-    borderColor='5px solid #DDB88A'
+    class="hero-image__border"
     imageUrl='https://dummyimage.com/600x400/000/fff.png'
     altText="fake image yall"
 }}
 
-{{#> banner}}
+{{#> banner class="secondary-banner" second-class="secondary-banner__content"}}
 
     {{#*inline "top"}}
         <h1>I am a heading</h1>
@@ -75,7 +76,7 @@ description: What goes here
 {{#> boxies}}
 
     {{#*inline "left-column"}}
-        {{> inline-images}}
+        {{> inline-images imageUrl="https://dummyimage.com/250x250/000/fff.png" altText="a cool image"}}
     {{/inline}}
 
     {{#*inline "right-column"}}
@@ -86,9 +87,25 @@ description: What goes here
 
 {{> button class='primary-button' buttonText='i am button'}}
 
+{{> spacer spacerSize="10"}}
+
 {{#> footer class="primary-footer"}}
 
     {{#*inline "test"}}
+        {{> social-media
+            class='social-media__icon'
+            imageLink='http://www.google.com'
+            imageUrl='../assets/img/facebook.png'
+            altText='facebook icon'
+
+            imageLink2='http://www.yahoo.com'
+            imageUrl2='../assets/img/twitter.png'
+            altText2='twitter icon'
+
+            imageLink3='http://www.cnn.com'
+            imageUrl3='../assets/img/linkedin.png'
+            altText3='linkedin icon'
+        }}
         {{> footer-nav
             menu1='Email Us' 
             menu2='Login' 

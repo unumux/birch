@@ -4,8 +4,12 @@
     background-color: $primary-header-bg-color;
     color: $primary-header-text-color;
     
-    a {
+    a, a:visited, a:focus {
         color: $primary-header-link-color;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }
 
@@ -31,7 +35,6 @@
 
 .secondary-banner {
     background-color: $secondary-banner-background-color;
-    border-bottom: 5px solid $secondary-banner-border-color;
     color: $secondary-banner-color;
 }
 
@@ -63,4 +66,12 @@
     margin-right: 5px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+.hero-image__border {
+    border-bottom: 5px solid $hero-image-border-color !important;
+}
+
+.social-media__icon {
+    width: 21px;
 }

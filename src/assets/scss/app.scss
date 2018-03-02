@@ -3,18 +3,6 @@
 @import 'unum/unum-components';
 @import 'foundation-emails';
 
-.zeroPadding {
-    padding: 0px !important;
-}
-
-
-.birch-banner .container {
-    background-color: #eee;
-}
-
-.birch-contact-card .container {
-    background-color: yellow;
-}
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
     color: inherit;
@@ -25,25 +13,11 @@ table.button {
     Margin: 0;
 }
 
-.border {
-    border-bottom: 5px solid BurlyWood;
-
-    :last-child {
-        border-bottom: none;
-    }
-}
-
-.footerBorder {
-    border-top: 5px solid BurlyWood;
-}
-
-th.menu-item a {
-    color: #fff !important;
-}
+// HELPER CLASSES
 
 .underline {
     text-decoration: underline;
-
+    
     &:hover {
         text-decoration: none;
     }
@@ -51,4 +25,8 @@ th.menu-item a {
 
 .noBottom {
     padding-bottom: 0px!important;
+}
+
+.zeroPadding {
+    padding: 0px !important;
 }
