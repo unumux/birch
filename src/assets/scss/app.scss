@@ -23,6 +23,15 @@ table.button {
     }
 }
 
+.flipUnderline {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
 .noBottom {
     padding-bottom: 0px!important;
 }

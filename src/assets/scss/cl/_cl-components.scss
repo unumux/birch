@@ -42,17 +42,46 @@
     padding-top: 16px;
 }
 
-.primary-button, .primary-button a {
-    background-color: $primary-button-background-color;
+.primary-button, .primary-button a, .primary-button table.button, .primary-button table, .primary-button td {
+    background: $primary-button-background-color;
     border-radius: 3px;
     color: $primary-button-color;
+
+    &:hover {
+        background-color: #136259!important;
+    }
 }
+
+.primary-button td:hover {
+    background-color: none !important;
+}
+
 
 .secondary-button, .secondary-button table.button, .secondary-button table, .secondary-button td, .secondary-button a  {
     background: $secondary-button-background-color !important;
+    border: none;
     border-radius: 3px;
     color: $secondary-button-color !important;
+
+    &:hover {
+        background: $secondary-button-color !important;
+        color: $secondary-button-background-color !important;
+    }
 }
+
+.secondary-button td:hover {
+    background-color: none !important;
+}
+
+.secondary-button a {
+    &:hover {
+        border: 2px solid #fff!important;
+    }
+}
+
+
+
+
 
 .contact-card {
     background-color: $contact-card-background-color;

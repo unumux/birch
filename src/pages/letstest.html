@@ -28,7 +28,7 @@ description: What goes here
     {{/inline}}
 
     {{#*inline "bottom"}}
-        {{> button class='secondary-button' buttonText='hallo moto'}}
+        {{> button href="#" class='secondary-button' buttonText='hallo moto'}}
     {{/inline}}
 
 {{/banner}}
@@ -73,6 +73,8 @@ description: What goes here
 
 {{/banner}}
 
+{{> spacer spacerSize='16'}}
+
 {{#> boxies}}
 
     {{#*inline "left-column"}}
@@ -80,14 +82,14 @@ description: What goes here
     {{/inline}}
 
     {{#*inline "right-column"}}
-        {{> button class="secondary-button" buttonText="hi again"}}
+        {{> button href="#" class="secondary-button" buttonText="hi again"}}
     {{/inline}}
 
 {{/boxies}}
 
-{{> button class='primary-button' buttonText='i am button'}}
+{{> button href="#" class='primary-button' buttonText='i am button'}}
 
-{{> spacer spacerSize="10"}}
+{{> spacer spacerSize="16"}}
 
 {{#> footer class="primary-footer"}}
 
@@ -107,12 +109,16 @@ description: What goes here
             altText3='linkedin icon'
         }}
         {{> footer-nav
-            menu1='Email Us' 
-            menu2='Login' 
+            menu1='Email Us'
+            menuHref='#' 
+            menu2='Login'
+            menu2Href='#' 
             menu3='Call Us: 1.800.275.8686'
+            menu3Href='#'
         }}
-        {{> product-nav}}
-        {{> copyright}}
+        {{> product-nav-cl}}
+
+        {{> copyright-cl}}
 
     {{/inline}}
 
