@@ -116,10 +116,14 @@ $button-rounded: $global-rounded;
 
 $primary-button-background-color: $primary-color;
 $primary-button-color: $white !important;
+$primary-button-color-hover: darken($primary-color, 10%);
 $secondary-button-background-color: $secondary-color;
 $secondary-button-color: $primary-color;
+$secondary-button-color-hover: darken($secondary-color, 10%);
 $ghost-button-background-color: $white;
 $ghost-button-color: $primary-color;
+$ghost-button-color-hover: darken($white, 10%);
+
 
 // 6. Callout
 // ----------

@@ -44,11 +44,13 @@
 
 .primary-button {
     background-color: $primary-button-background-color;
+    border-radius: 3px;
     color: $primary-button-color;
 }
 
-.secondary-button, .secondary-button a  {
-    background-color: $secondary-button-background-color !important;
+.secondary-button, .secondary-button table.button, .secondary-button table, .secondary-button td, .secondary-button a  {
+    background: $secondary-button-background-color !important;
+    border-radius: 3px;
     color: $secondary-button-color !important;
 }
 
@@ -75,3 +77,6 @@
 .social-media__icon {
     width: 21px;
 }
+
+// HELPER CLASSES
+
