@@ -59,7 +59,7 @@
 
 .secondary-button, .secondary-button table.button, .secondary-button table, .secondary-button td, .secondary-button a  {
     background: $secondary-button-background-color !important;
-    border: none;
+    border: 0px solid transparent;
     border-radius: 3px;
     color: $secondary-button-color !important;
 
@@ -74,14 +74,12 @@
 }
 
 .secondary-button a {
+    border: 2px solid transparent!important;
+
     &:hover {
         border: 2px solid #fff!important;
     }
 }
-
-
-
-
 
 .contact-card {
     background-color: $contact-card-background-color;
