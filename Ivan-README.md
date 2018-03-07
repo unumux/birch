@@ -1,5 +1,13 @@
 # Birch
 
+# Table of Contents
+* [How to get started](#how-to-get-started)
+* [Themes](#themes)
+* [How to Use a Component](#how-to-use-a-component)
+* [List of Components](#list-of-components)
+* [Breakdown of Components](#breakdown-of-components)
+* [Helpful Tips](#helpful-tips)
+
 # How to get started
 Go to [GitHub](https://github.com/unumux/birch) to clone the repo.
 
@@ -21,7 +29,7 @@ Currently there are two themes:
 
 **Please Note:** There will be a need for a Paul Revere theme to be created at some point as well.
 
-## How to switch themes
+## How to use/switch themes
 
 Themes are currently controlled with the app.scss file. This is located under src > assets > scss > app.scss .
 
@@ -34,23 +42,6 @@ The theme files are where the custom variables live. The theme component files a
 ### Other SCSS files
 
 The settings.scss file is where default variables provided by Foundations for Emails can be found.
-
-# List of Components:
-* [Banner](#banner)
-* [Boxies](#boxies)
-* [Button](#button)
-* [Contact Card](#contact-card)
-* [Copyright](#copyright)
-* [Divider](#divider)
-* [Footer Nav](#footer-nav)
-* [Footer](#footer)
-* [Header](#header)
-* [Hero Image](#hero-image)
-* [Inline Images](#inline-images)
-* [Product Nav](#product-nav)
-* [Social Media](#social-media)
-* [Spacer](#spacer)
-* [Sub Brand](#sub-brand)
 
 # How to Use a Component
 Each component is created under the **partials** folder. We have been commenting the start and end of each component to help the end user be able to read the final compiled HTML file easier.
@@ -111,6 +102,23 @@ You have two options for how to insert content into these blocks:
 
 Now, repeat that process for any other components needed for a template!
 
+# List of Components:
+* [Banner](#banner)
+* [Boxies](#boxies)
+* [Button](#button)
+* [Contact Card](#contact-card)
+* [Copyright](#copyright)
+* [Divider](#divider)
+* [Footer Nav](#footer-nav)
+* [Footer](#footer)
+* [Header](#header)
+* [Hero Image](#hero-image)
+* [Inline Images](#inline-images)
+* [Product Nav](#product-nav)
+* [Social Media](#social-media)
+* [Spacer](#spacer)
+* [Sub Brand](#sub-brand)
+
 # Breakdown of Components
 # Banner
 The purpose of the banner component is to be able to easily add text, icons, and/or buttons in any combination/order.
@@ -123,24 +131,82 @@ The banner component is composed of three sections:
 
 And has two classes:
 * {{class}}
-    * Used to make the banner reflect primary or secondary banner styling by adding the primary-banner or secondary-banner class.
+    * Used to make the banner reflect primary or secondary banner styling by adding the .primary-banner or .secondary-banner class.
 
 * {{second-class}}
-    * Used to add the primary-banner__content or secondary-banner__content to add needed padding to the content.
+    * Used to add the .primary-banner__content or .secondary-banner__content to add needed padding to the content.
 
 # Boxies
+The purpose of the boxies component is to allow for/create a two column layout. 
+
+The boxies component is composed of two sections:
+* left-column
+* right-column
+
+There are no classes currently associated with boxies.
 
 # Button
+The purpose of button is to provide an action on the page.
 
+The button is centered by default.
+
+There are no sections associated with button at this time.
+
+Button has three classes:
+* {{href}}
+    * allows you to easily add the website link that the button should direct you to
+
+* {{class}}
+    * currently used to define the color type of the button for styling purposes by adding .primary-button or .secondary-button.
+
+* {{buttonText}} 
+    * used to add the text to be read on the button.
 
 # Contact Card
+The purpose of the contact card component is to offer an enhanced email signature that includes an image and detailed contact information.
+
+There are no sections for this component.
+
+There are 12 classes for the contact card component:
+* {{class}}
+    * used so that the class **'.contact-card'** can be added for styling purposes
+
+* {{second-class}}
+    * used so that **'.contact-card__column'** can be added for styling purposes
+
+* {{imageUrl}}, {{imageUrl2}}, {{imageUrl3}}
+    * allows you to insert icons or images into the component
+
+* {{altText}}, {{altText2}}, {{altText3}}
+    * allows you to add alt text, associated with the image you add to the component
+
+* 4 classes are used to insert text, with the class name suggesting what should be added:
+    * {{name}}
+
+    * {{title}}
+
+    * {{email}}
+
+    * {{number}}
 
 # Copyright
 There are two copyright components. One is setup for Colonial Life and the other for Unum.
 
 # Divider
+The purpose of the divider component is to allow for the '•' character to be added to the footer nav. 
+
+There are no classes or sections associated with this component.
 
 # Footer Nav
+The purpose of the footer nav is to allow for an additional menu, other than the products, to the footer. In previous designs, this has included links to 'Email Us', 'Login', and 'Call Us'.
+
+The footer nav has six classes:
+
+* {{menuHref}}, {{menuHref2}}, {{menuHref3}}
+    * creates the link to wherever the item should direct you to
+
+* {{menu1}}, {{menu2}}, {{menu3}}
+    * this allows you to add the text to the item associated with the link.
 
 # Footer
 Footer takes any of the following components: 
@@ -162,10 +228,13 @@ There are two versions of the Product Nav component. One is setup for Colonial L
 # Social Media
 
 # Spacer
+The purpose of the spacer component is to utilize the '< spacer >' tag that Foundation for Emails provides and add a class to easily change the spacer size.
 
-# Sub Brand
+There are no sections for the spacer component.
 
-# Helpful Classes & HTML Tags
+The only class for the spacer component is {{spacerSize}}. This takes a numerical value that can increase or decrease the space between two things.
+
+# Helpful Tips
 Foundations for Emails provides some class names and HTML tags that can easily be added to your HTML such as:
 
 * class-names: text-left , text-center or text-right
