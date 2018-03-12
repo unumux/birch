@@ -7,6 +7,7 @@
 * [List of Components](#list-of-components)
 * [Breakdown of Components](#breakdown-of-components)
 * [Helpful Tips](#helpful-tips)
+* [Current Issues](#current-issues)
 
 # How to get started
 Go to [GitHub](https://github.com/unumux/birch) to clone the repo.
@@ -46,7 +47,7 @@ The settings.scss file is where default variables provided by Foundations for Em
 # How to Use a Component
 Each component is created under the **partials** folder. We have been commenting the start and end of each component to help the end user be able to read the final compiled HTML file easier.
 
-From there, the component is given a component layout under the pages > components folder. Here, we declare the component using the Handlebars syntax. ie: {{> banner}}.
+From there, we create a page using a layout that displays variations of the component under the pages > components folder. Here, we declare the component using the Handlebars syntax. ie: {{> banner}}.
 
 Now, the component is ready to be used in a template. We have been doing most of our testing in the pages > leststest.html file. 
 
@@ -117,7 +118,6 @@ Now, repeat that process for any other components needed for a template!
 * [Product Nav](#product-nav)
 * [Social Media](#social-media)
 * [Spacer](#spacer)
-* [Sub Brand](#sub-brand)
 
 # Breakdown of Components
 # Banner
@@ -216,7 +216,32 @@ Footer takes any of the following components:
 * Product-Nav
 * Social Media
 
+The footer also has one class:
+* {{class}}
+    * this gives the footer a class of "primary-footer" or whatever option would be needed
+
 # Header
+The purpose of the header is to include a logo, sub-brand name, and an optional "sign-in" or other call to action link.
+
+The header may need to end up being split up into 3 "inline block" sections but for now we do not have it set up this way. 
+
+The header has 8 classes:
+* {{class}}
+    * gives the header a class of "primary-header"
+* {{logoUrl}}
+    * where you want the logo to take you when clicked
+* {{logoImage}}
+    * path to the image file
+* {{logoImageAlt}}
+    * to add alt text to the image
+* {{brand}}
+    * allows you to add to text for the subbrand
+* {{clickerUrl}}
+    * where you want the call to action link to take you when clicked
+* {{clickerColor}}
+    * defines the text color of the link
+* {{clickerText}}
+    * allows you to enter the text of the link
 
 # Hero Image
 
@@ -226,6 +251,10 @@ Footer takes any of the following components:
 There are two versions of the Product Nav component. One is setup for Colonial Life, while the other is for Unum. The links to products have been setup to go to the appropriate product page of each website accordingly.
 
 # Social Media
+The purpose of this component is to allow for a social media "navigation" to be added to the page. In previous designs, this has only been added to the footer. 
+
+This component has 4 classes:
+* {{class}}
 
 # Spacer
 The purpose of the spacer component is to utilize the '< spacer >' tag that Foundation for Emails provides and add a class to easily change the spacer size.
@@ -235,7 +264,40 @@ There are no sections for the spacer component.
 The only class for the spacer component is {{spacerSize}}. This takes a numerical value that can increase or decrease the space between two things.
 
 # Helpful Tips
-Foundations for Emails provides some class names and HTML tags that can easily be added to your HTML such as:
 
-* class-names: text-left , text-center or text-right
-* tags: < menu >, < container >, < wrapper >
+* Foundations for Emails provides some class names and HTML tags that can easily be added to your HTML. Check out their documentation here: https://foundation.zurb.com/emails/docs/ 
+    * some of the main classes/tags we are using are:
+        * text-left, text-right, text-center
+        * "small" and "large" for media queries
+        * < center > for a menu or button because centering any item is very difficult
+
+* Note that SVG files can NOT be used for images. They do not show up on emails.
+
+# Current Issues/ Final Thoughts
+
+* A view in browser link component may need to be added. I have read a lot of documentation on whether this needs to be at the very top of the email or in the footer, and most recent dicussions suggest in the footer as this is slowly becoming less and less needed.
+
+* The entire icon library will need to be added into Silverpop for use there
+
+* The white secondary button for the Colonial Life theme still has a weird issue on hover where a small, thin line of the primary blue color shows. This button should only be used on a background color of blue, so it should remain hidden but if you use that button on a white background, you can see the issue on hover.
+
+* I added a bunch of class names ( ie: {{class}}, {{second-class}}, etc. ) to components that may be unnecessary, after looking into it further with Kyle. His thought was we should be able to declare multiple classes under ONE {{class}}. Therefore if a component has the placeholder {{class}}, in our template we should be able to define class as multiple things. 
+
+    So what was this: 
+
+        {{> 
+            contact-card
+            class='contact-card'
+            second-class="contact-card__column"
+        }}
+
+    would now be this: 
+
+        {{> 
+            contact-card
+            class='contact-card contact-card__column'
+        }}
+
+Just some potential cleanup I wanted to make a note of.
+
+* When a footer's background color is dark and the font color is light, a spam flag tends to get raised and the design of the footer is changed. May need to require all footers to have a white/light background color as a standard.
