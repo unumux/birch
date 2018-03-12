@@ -244,8 +244,25 @@ The header has 8 classes:
     * allows you to enter the text of the link
 
 # Hero Image
+The purpose of this component is to allow for a full-width image. It also has an optional bottom border, as per designs Expo has created. 
+
+This has three classes:
+* {{class}}
+    * this is so the "hero-image__border" class can be included if a border is required
+* {{imageUrl}}
+    * this allows for the image path to be added
+* {{altText}}
+    * this is for adding the alt text for the image
 
 # Inline Images
+The purpose of this component is to be able to add images to the left or right hand column of the "boxies" component. 
+
+This component has two classes:
+
+* {{imageUrl}}
+    * adds the image path
+* {{altText}}
+    * adds the alt text for the image
 
 # Product Nav
 There are two versions of the Product Nav component. One is setup for Colonial Life, while the other is for Unum. The links to products have been setup to go to the appropriate product page of each website accordingly.
@@ -255,6 +272,13 @@ The purpose of this component is to allow for a social media "navigation" to be 
 
 This component has 4 classes:
 * {{class}}
+    * used to add "social-media__icon" class for sizing
+* {{imageLink}}, {{imageLink2}}, {{imageLink3}}
+    * sets up the icon for where you what it to take you when clicked
+* {{imageUrl}}, {{imageUrl2}}, {{imageUrl3}}
+    * adds the path of where the image is located for the icon
+* {{altText}}, {{altText2}}. {{altText3}}
+    * sets the alt text for each icon
 
 # Spacer
 The purpose of the spacer component is to utilize the '< spacer >' tag that Foundation for Emails provides and add a class to easily change the spacer size.
@@ -270,6 +294,8 @@ The only class for the spacer component is {{spacerSize}}. This takes a numerica
         * text-left, text-right, text-center
         * "small" and "large" for media queries
         * < center > for a menu or button because centering any item is very difficult
+
+* This site really helped Kyle and I understand the use of Handlebars paritals, inline blocks, etc https://cloudfour.com/thinks/the-hidden-power-of-handlebars-partials/ 
 
 * Note that SVG files can NOT be used for images. They do not show up on emails.
 
